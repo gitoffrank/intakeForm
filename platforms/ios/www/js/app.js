@@ -59,6 +59,86 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+  .state('app.loginform', {
+      url: '/loginform',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/loginform.html',
+          controller: 'LoginFormCtrl'
+        }
+      }
+    })
+
+  .state('app.myforms', {
+      url: '/myforms',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/myforms.html',
+          controller: 'MyFormsCtrl'
+        }
+      }
+    })
+
+  .state('app.doctors', {
+      url: '/doctors',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/doctors.html',
+          controller: 'DoctorsCtrl'
+        }
+      }
+    })
+
+  .state('app.bookings', {
+      url: '/bookings',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/bookings.html',
+          controller: 'BookingsCtrl'
+        }
+      }
+    })
+
+  .state('app.myprofile', {
+      url: '/myprofile',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/myprofile.html',
+          controller: 'MyProfileCtrl'
+        }
+      }
+    })
+
+  .state('app.help', {
+      url: '/help',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/help.html',
+          controller: 'HelpCtrl'
+        }
+      }
+    })
+
+  .state('app.select_patient_form', {
+      url: '/select_patient_form',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/select_patient_form.html',
+          controller: 'SelectPatientFormCtrl'
+        }
+      }
+    })
+
+  .state('app.basic_info_form', {
+      url: '/basic_info_form',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/basic_info_form.html',
+          controller: 'BasicInfoFormCtrl'
+        }
+      }
+    })
+
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
@@ -69,5 +149,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/loginform');
 });

@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $state) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -39,6 +39,10 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
+
+  $scope.logout = function(){
+    $state.go('app.loginform');
+  }
 })
 
 .controller('PlaylistsCtrl', function($scope) {
@@ -50,6 +54,40 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
+})
+
+.controller('LoginFormCtrl', function($scope, $stateParams, $state) {
+  $scope.gotoMyForms = function(){
+    $state.go('app.myforms');
+  }
+
+})
+
+.controller('MyFormsCtrl', function($scope, $stateParams, $state) {
+  $scope.gotoSelectPatientForm = function(){
+    $state.go('app.select_patient_form');
+  }
+})
+
+.controller('DoctorsCtrl', function($scope, $stateParams, $state) {
+})
+
+.controller('BookingsCtrl', function($scope, $stateParams, $state) {
+})
+
+.controller('MyProfileCtrl', function($scope, $stateParams, $state) {
+})
+
+.controller('HelpCtrl', function($scope, $stateParams, $state) {
+})
+
+.controller('SelectPatientFormCtrl', function($scope, $stateParams, $state) {
+  $scope.gotoBasicInfoForm = function(){
+    $state.go('app.basic_info_form');
+  }
+})
+
+.controller('BasicInfoFormCtrl', function($scope, $stateParams, $state) {
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

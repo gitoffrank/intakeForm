@@ -1,1 +1,166 @@
 /* Empty. Add your own CSS if you like */
+/* Login Screen */
+.login-background{
+	background-image : url('../img/background.jpg');
+	background-position: center;
+	background-size: auto 100%;
+}
+
+.welcome-text{
+	font-size: 8vw;
+    text-align: center;
+    color: white;
+    margin-top: 20vh;
+}
+
+.login-guide-text{
+    color: white;
+    font-size: 4vw;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10vw;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.input-text{
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 5px !important;
+    margin-top: 2vh;
+}
+
+.signin-button{
+	width: 40%;
+    height: 6vh;
+    margin-left: 30%;
+    margin-top: 8vh;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 3vh !important;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    border-radius: 6px;
+}
+
+.forgot-pwd-text{
+	color: #223442;
+    text-align: center;
+    /* margin-right: 20px; */
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.bar-header{
+	background-color: #3498db !important;
+}
+
+.bar.bar-stable .title {
+    color: white;
+}
+
+.bar-stable .button.button-icon {
+    color: white;
+}
+
+/* My Forms Screen */
+.filter-forms-text{
+	font-size: 2.5vw !important;
+    width: 20vw;
+    margin-left: 5vw;
+}
+
+.filter-forms{
+	height: 7vw;
+    margin-right: 5vw;
+}
+
+.filter-div{
+	height: 10vw;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+}
+
+.search-input-text{
+	width: 70vw;
+    margin-left: 13.5vw;
+    padding-left: 3vw !important;
+    margin-top: 2vh;
+    border: solid 1px gray !important;
+    border-radius: 4vw;
+    height: 5vw !important;
+}
+
+.forms-div{
+    width: 30vw;
+    height: 24vw;
+    margin-left: 2.5vw;
+    position: relative;
+    float: left;
+    margin-right:0vw;
+}
+
+.form-name-text{
+	font-size: 3vw;
+    text-align: center;
+    margin-top: 6vw;
+}
+
+.doctor-name{
+	text-align: center;
+    font-size: 2.5vw;
+    color: gray;
+    margin-top: 2vw;
+}
+
+.sent-image{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 8vw;
+}
+
+.delete-image{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:4vw;
+}
+
+.created-at{
+	font-size: 2vw;
+    text-align: center;
+    margin-top: 2vw;
+    color: #3cb0b8;
+}
+
+/* Select Patient & Forms Screen */
+.bar-stable .button.button-clear{
+    color:white;
+}
+
+.select-patient-div{
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.select-patient-option{
+    width: 80vw;
+    height: 10vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+
+
+
+
+
+
+
+
