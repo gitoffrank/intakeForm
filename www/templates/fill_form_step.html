@@ -1,0 +1,36 @@
+<ion-view view-title="Fill out this form">
+
+    <ion-nav-buttons side="right">
+        <button class="button button-icon" ui-sref="app.select_patient_form" style="">
+            Save
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="question-div" style="margin-top:5vh;">
+            1. Where is your pain?
+        </div>
+        <input type="text" placeholder="Please enter where your pain is." class="full-input-text"/>
+
+        <div class="question-div" style="margin-top:5vh;">
+            2. Intensity of pain 0 to 10
+        </div>
+       
+        <div class="question-div" style="margin-top:5vh;">
+            3. What makes your pain better
+        </div>
+
+        <div style="width: 50vw; margin-left: 27%; margin-top: 2vh;">
+            <label class="item item-input item-select filter-forms">
+                <select style="max-width: 100%; font-size:2.5vw !important;">
+                    <option selected="selected">Rest</option>
+                    <option>NSAIDS</option>
+                    <option>Ice</option>
+                    <option>Narcotics</option>
+                </select>
+            </label>
+        </div>
+        <div class="signin-button" style="margin-top: 10vh; background-color: #3498db;" ng-click="gotoFillCompleted()">
+            Next Step
+        </div>
+    </ion-content>
+</ion-view>

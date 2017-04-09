@@ -82,6 +82,12 @@ angular.module('starter.controllers', [])
 })
 
 .controller('SelectPatientFormCtrl', function($scope, $stateParams, $state) {
+  $scope.gotoBasicInfoForm = function(){
+    $state.go('app.basic_info_form');
+  }
+})
+
+.controller('BasicInfoFormCtrl', function($scope, $stateParams, $state) {
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

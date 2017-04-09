@@ -157,6 +157,81 @@
     margin-top: 5vh;
 }
 
+.guide-text{
+    font-size: 4vw;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10vh;
+    line-height: 1.2em;
+}
+
+.name-div{
+    width: 100%;
+    /* height: 5vh; */
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    margin-top: 6vh;
+    display: flex;
+}
+
+.half-input-text{
+    width: 40%;
+    margin-left: 10%;
+    /* margin-right: 6%; */
+    padding-left: 5px !important;
+    margin-top: 2vh;
+    border: solid gray 1px !important;
+    font-size: 3vw !important;
+    height: 7vw !important;
+    /* float: left; */
+    border-radius: 1vw;
+}
+
+.full-input-text{
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 5px !important;
+    border: solid gray 1px !important;
+    font-size: 3vw !important;
+    height: 7vw !important;
+    border-radius: 1vw;
+    margin-top: 2vh;
+}
+
+.privacy-notice-text{
+    font-size: 3vw;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 7vh;
+    line-height: 1.2em;
+}
+
+.agree-toggle{
+    width: 24vw;
+    margin-left: 38vw;
+    font-size: 3vw;
+    border: none;
+}
+
+.question-div{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2vh;
+    font-size: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -88,6 +88,21 @@ angular.module('starter.controllers', [])
 })
 
 .controller('BasicInfoFormCtrl', function($scope, $stateParams, $state) {
+  $scope.gotoFillFormStep = function(){
+    $state.go('app.fill_form_step');
+  }
+})
+
+.controller('FillFormStepCtrl', function($scope, $stateParams, $state) {
+  $scope.gotoFillCompleted = function(){
+    $state.go('app.fill_completed');
+  }
+})
+
+.controller('FillCompletedCtrl', function($scope, $stateParams, $state) {
+  $scope.gotoMyForms = function(){
+    $state.go('app.myforms');
+  }
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

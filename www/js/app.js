@@ -139,6 +139,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+  .state('app.fill_form_step', {
+      url: '/fill_form_step',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/fill_form_step.html',
+          controller: 'FillFormStepCtrl'
+        }
+      }
+    })
+
+  .state('app.fill_completed', {
+      url: '/fill_completed',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/fill_completed.html',
+          controller: 'FillCompletedCtrl'
+        }
+      }
+    })
+
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
