@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['rzModule'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout, $state) {
 
@@ -94,6 +94,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FillFormStepCtrl', function($scope, $stateParams, $state) {
+
+  $scope.painSlider = 10;
   $scope.gotoFillCompleted = function(){
     $state.go('app.fill_completed');
   }
